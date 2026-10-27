@@ -1,6 +1,10 @@
+import Navbar from './components/Navbar'
+
 function App() {
   return (
-    <h1>Opesora</h1>
+    <div>
+      <Navbar />
+    </div>
   )
 }
 
