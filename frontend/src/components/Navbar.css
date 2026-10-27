@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 40px;
+  background-color: #0f172a;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-right: auto;
+}
+
+nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
