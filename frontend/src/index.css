@@ -1,4 +1,25 @@
+:root {
+  --ink: #17141f;
+  --canvas: #f3f0ff;
+  --grape: #6c4cff;
+  --lemon: #ffe45c;
+  --mint: #5ce6b0;
+  --coral: #ff6b6b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  background-color: var(--canvas);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
