@@ -10,6 +10,7 @@ import Transactions from './pages/Transactions'
 function App() {
   return (
     <div>
+      <div className="m-4 rounded-2xl bg-violet-500 p-4 text-white">Tailwind works!</div>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
