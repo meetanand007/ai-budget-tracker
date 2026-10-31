@@ -1,0 +1,48 @@
+.auth-card {
+  background-color: white;
+  border: 3px solid var(--ink);
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 8px 8px 0 var(--ink);
+}
+
+.auth-card h1 {
+  margin: 0 0 24px;
+  font-size: 2rem;
+}
+
+.auth-card label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 3px solid var(--ink);
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.auth-card input:focus {
+  outline: none;
+  box-shadow: 4px 4px 0 var(--grape);
+}
+
+.auth-card button {
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form-error {
+  background-color: var(--coral);
+  border: 3px solid var(--ink);
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin: 0 0 20px;
+  font-weight: 700;
+}

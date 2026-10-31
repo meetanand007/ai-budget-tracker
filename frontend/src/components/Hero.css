@@ -1,0 +1,73 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+
+.hero-text {
+  flex: 1 1 420px;
+}
+
+.hero-text h1 {
+  font-size: clamp(2.6rem, 6vw, 4.5rem);
+  line-height: 1.02;
+  margin: 0 0 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 480px;
+  margin: 0 0 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hero-card {
+  flex: 0 1 340px;
+  background-color: var(--mint);
+  border: 3px solid var(--ink);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 8px 8px 0 var(--ink);
+  transform: rotate(2deg);
+}
+
+.hero-card p {
+  margin: 0 0 20px;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.hero-card .card-label {
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.meter {
+  height: 18px;
+  background-color: white;
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.meter-fill {
+  width: 70%;
+  height: 100%;
+  background-color: var(--grape);
+}
+@media (max-width: 700px) {
+  .hero {
+    padding: 48px 20px;
+  }
+}

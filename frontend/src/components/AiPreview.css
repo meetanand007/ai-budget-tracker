@@ -1,0 +1,63 @@
+.ai-preview {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+
+.ai-preview h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0 0 8px;
+}
+
+.ai-note {
+  margin: 0 0 32px;
+}
+
+.chat {
+  max-width: 720px;
+  background-color: white;
+  border: 3px solid var(--ink);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 8px 8px 0 var(--ink);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.chip {
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: white;
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.chip.active {
+  background-color: var(--lemon);
+  font-weight: 700;
+}
+
+.bubble {
+  max-width: 80%;
+  padding: 14px 18px;
+  border: 3px solid var(--ink);
+  border-radius: 18px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.from-user {
+  margin-left: auto;
+  background-color: #cdbfff;
+}
+
+.from-ai {
+  background-color: var(--mint);
+}
