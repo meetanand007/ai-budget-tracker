@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './Transactions.css'
-import BentoGrid from '../components/ui/BentoGrid'
-import BentoTile from '../components/ui/BentoTile'
+
 
 function Transactions() {
   const [transactions, setTransactions] = useState([])
@@ -32,20 +31,6 @@ function Transactions() {
 
   return (
     <main className="tx-page">
-    <BentoGrid>
-  <BentoTile title="Balance" size="wide">
-    <p className="font-mono text-4xl text-lime">₹12,450.00</p>
-  </BentoTile>
-  <BentoTile title="Spent this month">
-    <p className="font-mono text-3xl text-pink">₹4,200</p>
-  </BentoTile>
-  <BentoTile title="Savings goal">
-    <p>Phone: 40% there</p>
-  </BentoTile>
-  <BentoTile title="AI tip" size="wide">
-    <p>Skipping two takeout orders a week saves about ₹2,400 a month.</p>
-  </BentoTile>
-    </BentoGrid>
       <h1>Transactions</h1>
 
       <form className="tx-form" onSubmit={handleSubmit}>
