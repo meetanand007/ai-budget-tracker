@@ -46,3 +46,11 @@
   margin: 0 0 20px;
   font-weight: 700;
 }
+.auth-switch {
+  margin: 24px 0 0;
+}
+
+.auth-switch a {
+  color: var(--grape);
+  font-weight: 700;
+}
