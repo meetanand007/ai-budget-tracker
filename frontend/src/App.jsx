@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import Aurora from './components/ui/Aurora'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -6,11 +7,10 @@ import Signup from './pages/Signup'
 import Login from './pages/Login'
 import Transactions from './pages/Transactions'
 
-
 function App() {
   return (
     <div>
-      <div className="m-4 rounded-2xl bg-violet-500 p-4 text-white">Tailwind works!</div>
+      <Aurora />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

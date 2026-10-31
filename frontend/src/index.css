@@ -1,4 +1,36 @@
 @import "tailwindcss";
+
+@theme {
+  --color-night: #07070d;
+  --color-glass: rgb(255 255 255 / 0.04);
+  --color-edge: rgb(255 255 255 / 0.08);
+  --color-violet: #8b5cf6;
+  --color-cyan: #22d3ee;
+  --color-lime: #a3e635;
+  --color-pink: #f472b6;
+  --color-danger: #fb7185;
+  --color-warning: #fbbf24;
+  --color-success: #34d399;
+  --color-fg: #f5f5fa;
+  --color-muted: #9ca3af;
+
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+    --animate-drift-a: drift-a 22s ease-in-out infinite alternate;
+  --animate-drift-b: drift-b 28s ease-in-out infinite alternate;
+
+  @keyframes drift-a {
+    from { transform: translate(0, 0) scale(1); }
+    to { transform: translate(120px, 80px) scale(1.15); }
+  }
+
+  @keyframes drift-b {
+    from { transform: translate(0, 0) scale(1.1); }
+    to { transform: translate(-140px, 60px) scale(0.95); }
+  }
+}
+
 :root {
   --ink: #17141f;
   --canvas: #f3f0ff;
@@ -14,16 +46,17 @@
 
 body {
   margin: 0;
-  background-color: var(--canvas);
-  color: var(--ink);
-  font-family: 'DM Sans', sans-serif;
+  background-color: var(--color-night);
+  color: var(--color-fg);
+  font-family: var(--font-body);
 }
 
 h1, h2, h3 {
-  font-family: 'Bricolage Grotesque', sans-serif;
-  font-weight: 800;
+  font-family: var(--font-heading);
+  font-weight: 700;
   letter-spacing: -0.02em;
 }
+
 .btn {
   display: inline-block;
   padding: 14px 24px;
@@ -48,6 +81,7 @@ h1, h2, h3 {
 .btn-white {
   background-color: white;
 }
+
 .page {
   max-width: 600px;
   margin: 0 auto;
