@@ -1,0 +1,97 @@
+.tx-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.tx-page h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0 0 24px;
+}
+
+.tx-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  background-color: white;
+  border: 3px solid var(--ink);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 6px 6px 0 var(--ink);
+  margin-bottom: 40px;
+}
+
+.tx-form input,
+.tx-form select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 3px solid var(--ink);
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.tx-form input:focus,
+.tx-form select:focus {
+  outline: none;
+  box-shadow: 4px 4px 0 var(--grape);
+}
+
+.tx-form button {
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.tx-empty {
+  text-align: center;
+  padding: 32px;
+}
+
+.tx-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  background-color: white;
+  border: 3px solid var(--ink);
+  border-radius: 16px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.tx-item.income {
+  border-left: 14px solid var(--mint);
+}
+
+.tx-item.expense {
+  border-left: 14px solid var(--coral);
+}
+
+.tx-item span {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.tx-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.tx-right button {
+  font-family: inherit;
+  font-weight: 700;
+  background-color: white;
+  border: 3px solid var(--ink);
+  border-radius: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.tx-right button:hover {
+  background-color: var(--coral);
+}
